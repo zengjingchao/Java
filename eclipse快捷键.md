@@ -21,6 +21,8 @@ K：ctrl+d 删除当前行，或者删除选中行
 L：ctrl+shift+x 将选中部分的字母大写
 M：ctrl+shift+y 将选中部分的字母小写
 N：ctrl+1 光标放在编译中出现红色波浪线提示的内容上，在该快捷键可以获取建议的处理方式
+   alt+shift+m 抽取方法
+   alt+shift+r 改名
 6：代码生成的快捷键alt+shift+s
 出现source
 1：在区域中右键
