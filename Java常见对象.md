@@ -1,19 +1,19 @@
 ## Object类
-```java
 getClass()
+```java
 Demo d = new Demo();
 Class clazz1 = d.getClass();                //返回对象的运行时类
 Class clazz2 = Demo.class;
 System.out.println(clazz1 == clazz2);
-
+```
 hashCode()
-
+```java
 Demo d = new Demo();
 int hashCode = d.hashCode();
 System.out.println(hashCode);
-
+```
 toString()
-
+```java
 Demo d = new Demo();
 System.out.println(d);              //当对对象的引用打印时,会默认调用对象的toString方法,如果
 System.out.println(d.toString());   //该对象所属的类中没有toString方法,会调用Object类中(父类)
@@ -21,8 +21,9 @@ System.out.println(d.toString());   //该对象所属的类中没有toString方�
 int[] arr = new int[5];             //数组的父类也是Object
 System.out.println(arr);
 System.out.println(arr.toString());
-
+```
 equals()
+```java
 public boolean equals(Object obj) {
 return (this == obj);
 }
@@ -32,9 +33,9 @@ return (this == obj);
   equals方法在没有重写之前(Object类中的定义的)其实与==比较引用数据类型是一样的,但是我们在自定义类如果想比较对象中
 属性,就需要重写equals方法,其实equals方法主要是用来比较对象的属性
 equals方法只能比较引用数据类型 
-
+```
 finalize()
-
+```java
 class DemoA {
     @Override
     public void finalize(){
